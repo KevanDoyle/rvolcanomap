@@ -1,5 +1,5 @@
 #read the csv file into the data fram
-eruptiondeaths <- read.csv('EruptionDeaths.csv')
+eruptiondeaths <- read.csv('Data/EruptionDeaths.csv')
 #create a sf object with point data by concatenating lat and lon
 vei_sf <- st_as_sf(eruptiondeaths, coords = c("Longitude", "Latitude"), crs = 4326)
 #read the data to make sure it worked
